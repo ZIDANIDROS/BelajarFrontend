@@ -1,0 +1,65 @@
+.firstsection {
+  height: 100hv;
+}
+
+.firstsectionisi {
+  background-color: red;
+}
+
+.judulcard {
+  transform: translate3d(0, 0, 50px);
+  color: white;
+  transition: 0.5;
+}
+.firstcard img {
+  height: 300px;
+}
+
+.firstsection .image-container {
+  width: 100%;
+  height: auto;
+}
+.firstsection img {
+  transform: translate3d(0, 0, 100px);
+  transition: transform 0.5s;
+  width: 300px;
+  height: auto;
+}
+
+.firstsection img:hover {
+  transform: scale(1.4) rotate(-20deg);
+}
+
+.firstbn31 {
+  background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
+  border-radius: 40px;
+  box-sizing: border-box;
+  color: #0a6847;
+  display: block;
+  height: 50px;
+  font-size: 1.4em;
+  padding: 4px;
+  position: relative;
+  text-decoration: none;
+  width: 7em;
+  z-index: 2;
+}
+
+.firstbn31:hover {
+  color: #fff;
+}
+
+.firstbn31 .firstbn31span {
+  align-items: center;
+  background: white;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  transition: background 0.5s ease;
+  width: 100%;
+}
+
+.firstbn31:hover .firstbn31span {
+  background: transparent;
+}

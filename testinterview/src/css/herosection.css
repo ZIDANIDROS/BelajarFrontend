@@ -1,0 +1,116 @@
+.herosection {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.herosection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/background/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.6);
+  z-index: -1;
+}
+
+.bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: brightness(0.6);
+}
+
+@media only screen and (max-width: 768px) {
+  .kirihero {
+    padding-top: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+.kananhero {
+  width: 100%;
+  height: 100%;
+}
+
+.gambarherokanan {
+  width: 100%;
+  height: 70%;
+}
+
+@media only screen and (max-width: 768px) {
+  .kananhero {
+    height: 50%;
+  }
+  .gambarherokanan {
+    width: 100%;
+    height: 250px;
+  }
+}
+
+#holder {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  background: white;
+  padding: 10px;
+  width: 250px;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-65%);
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+.buttonhero {
+  background-color: #128a5d;
+  width: 70%;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.2s;
+  cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.btnTwo {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  margin-top: -100px;
+  padding-top: 2px;
+  background: #26a69a;
+  left: -250px;
+  transition: 0.3s;
+}
+.btnText {
+  color: white;
+  transition: 0.3s;
+}
+.btnText2 {
+  margin-top: 63px;
+  margin-right: -130px;
+  color: #fff;
+}
+.buttonhero:hover .btnTwo {
+  /*When hovering over .buttonhero change .btnTwo*/
+  left: -130px;
+}
+.buttonhero:hover .btnText {
+  /*When hovering over .buttonhero change .btnText*/
+  margin-left: 65px;
+}
+.buttonhero:active {
+  /*Clicked and held*/
+  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3);
+}
